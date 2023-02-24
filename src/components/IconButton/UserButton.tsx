@@ -4,12 +4,12 @@ import IconButtonBase from './IconButtonBase'
 
 
 interface props {
-    buttonProps?: React.Component<HTMLProps<HTMLButtonElement>>
+    onClick? : React.MouseEventHandler<HTMLButtonElement>
 }
 
-export default function UserButton( {buttonProps}: props ){
+export default function UserButton( {onClick}: props ){
     return (
-        <IconButtonBase {...buttonProps}>
+        <IconButtonBase onClick={onClick} text='Usuário'>
             <img src={userIcon} alt='User Button'/>
         </IconButtonBase>
     )

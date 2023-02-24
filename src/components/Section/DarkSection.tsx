@@ -16,7 +16,7 @@ export default function DarkSection( {children} : props) {
 
 const DarkSectionWrap = styled.section`
     color: white;
-    border: 1px solid white;
+    border: 1px solid #98C8FF;
     border-radius: 8px;
     padding: 16px;
     margin: 8px;
